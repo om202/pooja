@@ -14,9 +14,10 @@ export default function Home() {
         <meta name="description" content="Pooja Kumari Sah Portfolio Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className="bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40 mb-6">
+        {" "}
         <section className="min-h-screen">
-          <nav className="py-10 mb-3 flex justify-between dark:text-white">
+          <nav className="py-10 flex justify-between dark:text-white">
             <h1 className="font-burtons text-xl">Portfolio</h1>
             <ul className="flex items-center">
               <li>
@@ -27,11 +28,16 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-70 md:w-70 mb-2">
-            <Image src={deved} layout="responsive" objectFit="cover" alt="pooja" />
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-40 h-40 sm:w-50 sm:h-50 md:w-60 md:h-60 lg:w-70 lg:h-70 relative overflow-hidden mb-2">
+            <Image
+              src={deved}
+              layout="responsive"
+              objectFit="cover"
+              alt="pooja"
+            />
           </div>
           <div className="text-center">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl py-2 text-teal-600 font-medium dark:text-teal-400">
               Pooja Kumari Sah
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
